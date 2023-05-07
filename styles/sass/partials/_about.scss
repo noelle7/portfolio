@@ -1,0 +1,65 @@
+@use "./variables" as *;
+
+// ABOUT SECTION
+
+.aboutMe, .skills {
+    background-color: $backgroundWhite;
+    padding-top: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    
+
+    .aboutText {
+        p {
+            line-height: 2;
+            padding: 10px 30px;
+        }
+    }
+
+    .aboutImg {
+        max-width: 300px;
+        filter: grayscale(1);
+    }
+}
+
+.skills {
+    height: 100%;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 6% auto;
+        justify-content: center;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            flex-basis: 15%;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+
+            i {
+                font-size: 2.5rem;
+                max-width: 100px;
+                line-height: 1;
+
+                p{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
+}
+
+.skill i:hover {
+    transform: scale(1.1);
+    color: $lightGrey;
+}

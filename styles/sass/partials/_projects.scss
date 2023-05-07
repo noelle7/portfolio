@@ -1,0 +1,118 @@
+@use "./variables" as *;
+
+.projectColumn {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project {
+    background-color: $white;
+    color: $grey;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow .1s ease-in-out;
+    height: 300px;
+    margin: 50px;
+    display: flex;
+    flex-basis: 50%;
+    flex: 1 1 50%;
+}
+
+.projectTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0 30px 30px;
+    flex: 0 0 50%;
+
+    h3 {
+        color: $black;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-top: 30px;
+    }
+}
+
+.projectImage {
+    display: flow-root;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    flex: auto;
+
+    canvas {
+        width: 784;
+        height: 588;
+    }
+
+    img {
+        height: 100%;
+        max-width: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        filter: grayscale(1);
+    }
+
+    .hidden {
+        background-image: linear-gradient(to right, white 8.33%, transparent);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.projectButton {
+    padding: 0;
+    display: flex;
+    justify-content: left;
+
+    button {
+        background-color: $black;
+        border: none;
+        padding: 5px 7px;
+        // margin: 0 10px 0 0;
+        margin-right: 10px;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-size: .75rem;
+            font-weight: 700;
+        }
+    }
+
+    // a {
+    //     box-sizing: border-box;
+    //     position: relative;
+    //     display: var(--button-display);
+    //     flex-shrink: 0;
+    //     justify-content: center;
+    //     align-items: center;
+    //     font-family: var(--button-font-typeface,);
+    //     font-weight: var(--button-font-weight,700);
+    //     text-transform: var(--button-font-transform,initial);
+    //     font-size: var(--button-font-size);
+    //     height: var(--button-height);
+    //     padding: var(--button-padding);
+    //     margin: var(--button-margin);
+    //     color: var(--color-gray-100);
+    //     text-align: var(--button-align-text);
+    //     text-decoration: none;
+    //     line-height: 1;
+    //     letter-spacing: var(--button-font-spacing,normal);
+    //     vertical-align: top;
+    //     border-radius: var(--button-border-radius,5px);
+    //     outline: 0;
+    //     cursor: pointer;
+    //     transition: 250ms cubic-bezier(.53,.21,0,1);
+    // }
+}
