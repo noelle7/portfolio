@@ -7,10 +7,9 @@ header {
 
 .mainContainer {
     height: 100vh;
-    // margin-top: 40px;
+    margin-top: 40px;
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     .textContainer {
         font-size: 40px;
@@ -21,8 +20,11 @@ header {
             font-size: 25px;
         }
 
-        h2 {
+        h1 {
             margin-top: 20px;
+            font-size: 5.5rem;
+            font-weight: 700;
+            padding: 0;
         }
     }
 }

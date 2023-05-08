@@ -1,1 +1,197 @@
+@use "./variables" as *;
 
+footer {
+    background-color: $black;
+    height: 100%;
+    color: $white;
+    // padding-top: 20px;
+}
+
+.footerContainer {
+    padding-top: 2.5rem;
+}
+
+.footerRow {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footerColumn {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.footerText {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+
+.footerTitle {
+    margin-top: 2.5rem;
+
+    h2 {
+        margin-top: 0;
+        text-align: start;
+    }
+
+    p {
+        width: 70%;
+        line-height: 2;
+        font-size: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    // button {
+    //     border: none;
+    //     background-color: $white;
+
+    //     a {
+    //         padding: 10px 20px;
+    //         font-size: 1.25rem;
+    //     }
+    // }
+}
+
+.footerTitle button:hover,
+.footerTitle button:focus {
+    background-color: $lightGray;
+    transition: .1s ease-in-out;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        
+        li {
+            // padding: 10px;
+            margin-right: 20px;
+
+            i {
+                color: $white;
+                font-size: 2.5rem;
+                max-width: 100px;
+            }
+
+            i:hover,
+            i:focus {
+                transform: scale(1.1);
+            }
+        }
+        
+    }
+}
+
+.contactForm {
+    width: 100%;
+}
+
+.footerColumn form {
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    width: 100%;
+    grid-column: 2/-2;
+    justify-content: center;
+    // margin-top: 6rem;
+    padding: 2rem;
+    position: relative;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 1rem;
+        text-transform: capitalize;
+        width: 100%;
+
+        span {
+            padding-left: 7px;
+        }
+
+        input,
+        textarea {
+            // background: hsla(44,86%,70%,.5);
+            background: $lightGrey;
+            border: 3px solid $black;
+            border-radius: 5px;
+            color: $black;
+            font-size: 1rem;
+            margin: 10px 5px;
+            padding: 10px 5px;
+            transition: background .3s;
+            height: 2.5rem;
+        }
+
+        textarea {
+            height: 148px;
+            resize: none;
+        }
+
+        input:hover,
+        input:focus,
+        textarea:hover,
+        textarea:focus {
+            background: $backgroundWhite;
+            transition: background .3s;
+        }
+    }
+
+    .button {
+        background-color: $black;
+        // cursor: pointer;
+        // padding: 10px;
+        // // justify-self: center;
+        // // margin-top: 1rem;
+        // border: 2px solid #fff;
+        border-radius: 1px;
+        // line-height: normal;
+        padding: 13px 25px;
+        text-align: center;
+
+        a {
+            color: $white;
+            padding: 0;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        a:hover,
+        a:focus {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+.footerBottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    a:hover,
+    a:focus {
+        transform: scale(1.1);
+    }
+}

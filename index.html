@@ -21,8 +21,8 @@
 		<!-- HEADER SECTION -->
 		<header>
 			<!-- HEADER - NAV -->
-			<div class="wrapperNav">
-				<nav class="navBar">
+			<div class="wrapper">
+				<nav class="navBar top">
 					<div class="navBarLeft">
 						<a href="index.html">Noelle.</a>
 						<!-- <a href="index.html">N.</a> -->
@@ -30,18 +30,17 @@
 					<div class="navBarCenter">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="">About</a></li>
-							<li><a href="">Projects</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a href="#aboutMe">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
-					<div class="navBarRight">
-						<a href="">
+					<!-- <div class="navBarRight">
+						<a href="#contact">
 							<span>Let's Talk </span>
 							<i class="fa-solid fa-arrow-right"></i>
-							<i></i>
 						</a>
-					</div>
+					</div> -->
 				</nav>
 			</div>
 
@@ -50,10 +49,10 @@
 				<div class="wrapper">
 					<div class="textContainer">
 						<h5>Noelle Huang</h5>
-						<h2>
+						<h1>
 							Front-End <br />
 							Developer.
-						</h2>
+						</h1>
 						<!-- <a href="">Start a project</a> -->
 					</div>
 				</div>
@@ -61,14 +60,15 @@
 		</header>
 
 		<!-- ABOUT section -->
-		<section class="aboutMe">
+		<section class="aboutMe" id="aboutMe">
 			<div class="wrapper">
 				<div class="aboutColumn">
+					<h2>About Me.</h2>
+
 					<div class="aboutContainer">
 						<div class="aboutText">
-							<h2>About Me.</h2>
 							<p>
-								Hello, I'm Noelle Huang! a passionate web
+								Hello, I'm Noelle Huang! A passionate web
 								developer from Montreal, QC, able to design and
 								build attractive, responsive, and accessible
 								websites following best practices. <br /><br />
@@ -84,6 +84,7 @@
 							/>
 						</div>
 					</div>
+					<a class="button buttonLink" href="assets/NoelleHuangResume.pdf" target="_blank" rel="noopener">View Resume</a>
 				</div>
 			</div>
 		</section>
@@ -138,7 +139,7 @@
 		</section>
 
 		<!-- PROJECTS section -->
-		<section class="projects">
+		<section class="projects" id="projects">
 			<div class="projectsContainer wrapper">
 				<h2>Featured Projects.</h2>
 				<div class="projectsColumn">
@@ -147,7 +148,7 @@
 						<div class="projectTextContainer">
 							<div class="projectText">
 								<div class="catergory">
-									<span>HTML, CSS & JavaScript</span>
+									<span>HTML / CSS / SCSS / JavaScript / Firebase</span>
 								</div>
 								<h3>Nova Store.</h3>
 								<p>
@@ -182,15 +183,11 @@
 						<div class="projectTextContainer">
 							<div class="projectText">
 								<div class="catergory">
-									<span>HTML, CSS, & JavaScript</span>
+									<span>HTML / CSS / SCSS / JavaScript</span>
 								</div>
 								<h3>OREG Store.</h3>
 								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Exercitationem nisi,
-									architecto corporis illo aspernatur
-									consequatur quo dolor beatae hic rerum,
-									maiores quibusdam, ea modi officia!
+									PSD conversion made from client brief and design files using floats for layout. Responsive across devices.
 								</p>
 							</div>
 							<div class="projectButton">
@@ -221,15 +218,11 @@
 						<div class="projectTextContainer">
 							<div class="projectText">
 								<div class="catergory">
-									<span>HTML CSS</span>
+									<span>HTML / CSS</span>
 								</div>
 								<h3>Animal Kingdom.</h3>
 								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Exercitationem nisi,
-									architecto corporis illo aspernatur
-									consequatur quo dolor beatae hic rerum,
-									maiores quibusdam, ea modi officia!
+									An html and css only site built in class to show we can build a website similar to a provided client design.
 								</p>
 							</div>
 							<div class="projectButton">
@@ -260,37 +253,72 @@
 		</section>
 
 		<!-- FOOTER section -->
-		<footer>
+		<footer id="contact">
 			<div class="wrapper">
 				<div class="footerContainer">
-					<div class="footerTitle">
-						<h2>Get in touch.</h2>
-						<button><a href="">Contact me</a></button>
-					</div>
-					<div class="social">
-						<h3>You can also find me on</h3>
-						<ul>
-							<li>
-								<a href=""
-									><i class="fa-brands fa-linkedin"></i
-								></a>
-							</li>
-							<li>
-								<a
-									href="https://github.com/noelle7"
-									target="_blank"
-								>
-									<i class="fa-brands fa-square-github"></i
-								></a>
-							</li>
-							<li><a href="">Github</a></li>
-							<li><a href="">Github</a></li>
-						</ul>
-					</div>
-				</div>
 
-				<div class="footerBottom">
-					<p>2023@Noelle.Huang</p>
+					<div class="footerRow">
+	
+						<div class="footerColumn contactInformation">
+							<div class="footerText">
+
+								<div class="footerTitle">
+									<h2>Get in touch.</h2>
+									<p>If you ever want to grab a coffee or just want a quick chat - you can find me on social media or you can send me a message here!</p>
+									<!-- <button><a href="">Contact me</a></button> -->
+								</div>
+			
+								<div class="social">
+									<!-- <h3>You can also find me on</h3> -->
+									<ul>
+										<li>
+											<a href="https://www.linkedin.com/in/noellehuang07/" target="_blank"
+												><i class="fa-brands fa-linkedin"></i
+											></a>
+										</li>
+										<li>
+											<a
+												href="https://github.com/noelle7"
+												target="_blank"
+											>
+												<i class="fa-brands fa-square-github"></i
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="footerColumn containerForm">
+							<form action="">
+								<label for="name">
+									<span>Full Name*</span>
+									<input id="name" type="text" name="name" required="">
+								</label>
+								<label for="email">
+									<span>Email*</span>
+									<input id="email" type="email" name="email" required="">
+								</label>
+								<label for="subject">
+									<span>Subject Line*</span>
+									<input id="subject" type="text" name="subject" required="">
+								</label>
+								<label for="message">
+									<span>Your Message*</span>
+									<textarea id="message" name="message" required=""></textarea>
+								</label>
+	
+								<button class="button" type="submit">
+									<a class="buttonLink">Send Message</a>
+								</button>
+							</form>
+						</div>
+					</div>
+							
+					<div class="footerBottom">
+						<p>2023 © Noelle Huang</p>
+						<a href="#top">Back to top</a>
+					</div>
 				</div>
 			</div>
 		</footer>

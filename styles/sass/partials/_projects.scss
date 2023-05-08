@@ -84,35 +84,13 @@
 
         a {
             color: $white;
-            text-decoration: none;
-            font-size: .75rem;
-            font-weight: 700;
+            padding: 5px 10px;
         }
     }
 
-    // a {
-    //     box-sizing: border-box;
-    //     position: relative;
-    //     display: var(--button-display);
-    //     flex-shrink: 0;
-    //     justify-content: center;
-    //     align-items: center;
-    //     font-family: var(--button-font-typeface,);
-    //     font-weight: var(--button-font-weight,700);
-    //     text-transform: var(--button-font-transform,initial);
-    //     font-size: var(--button-font-size);
-    //     height: var(--button-height);
-    //     padding: var(--button-padding);
-    //     margin: var(--button-margin);
-    //     color: var(--color-gray-100);
-    //     text-align: var(--button-align-text);
-    //     text-decoration: none;
-    //     line-height: 1;
-    //     letter-spacing: var(--button-font-spacing,normal);
-    //     vertical-align: top;
-    //     border-radius: var(--button-border-radius,5px);
-    //     outline: 0;
-    //     cursor: pointer;
-    //     transition: 250ms cubic-bezier(.53,.21,0,1);
-    // }
+    button:hover,
+    button:focus {
+        background-color: $blackTransparent;
+    }
 }
+

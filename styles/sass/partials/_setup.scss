@@ -44,10 +44,43 @@ img {
 }
 
 a {
-    text-decoration: none;
     color: $black;
+    font-family: $fontStack;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: normal;
+    vertical-align: top;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(.53,.21,0,1);
 }
 
 
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+section {
+    margin: 5rem 0;
+}
 
 

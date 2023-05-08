@@ -4,19 +4,24 @@
 
 .aboutMe, .skills {
     background-color: $backgroundWhite;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .aboutContainer {
     display: flex;
     flex-direction: row;
     margin: 20px 0;
+    padding: 2rem 6rem;
+    flex-basis: 50%;
     
 
     .aboutText {
         p {
+            font-size: 1.25rem;
             line-height: 2;
-            padding: 10px 30px;
+            padding: 10px 4rem;
+            margin: 0;
+            text-align: start;
         }
     }
 
@@ -26,8 +31,24 @@
     }
 }
 
+.buttonLink {
+    color: $black;
+    padding: 0;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.buttonLink:hover,
+.buttonLink:focus {
+    transform: scale(1.1);
+}
+
+
 .skills {
     height: 100%;
+    margin-bottom: 10rem;
 
     ul {
         display: flex;
